@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using TodoApi.Models;
@@ -13,6 +14,10 @@ namespace TodoApi.Controllers
 
         public TodoController(TodoContext context)
         {
+            //Random r = new Random();
+            //int rInt = r.Next(0, 2000);
+            //System.Threading.Thread.Sleep(rInt);
+
             _context = context;
         }
 
